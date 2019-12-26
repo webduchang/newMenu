@@ -123,7 +123,17 @@ let fakeRouter = {
 
 }
 
-
+// 固定路由，比如登录，404等
+const ROUTER = [
+  {
+    path: '/login',
+    component: 'Login'
+  },
+  {
+    path: '/404',
+    component: '404'
+  },
+]
 router.beforeEach((to, from, next) => {
   console.log(getRouter)
   if (!getRouter) { //不加这个判断，路由会陷入死循环
@@ -156,6 +166,8 @@ router.beforeEach((to, from, next) => {
           }
           new_router.push(parentMenu);
         }
+        
+        new_router=new_router.concat(ROUTER)  //把固定路由添加在动态路由最后
         // getRouter = fakeRouter.router//本地写死测试路由
         getRouter = new_router//真实后台json转换后的路由
         console.log(getRouter)
