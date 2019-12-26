@@ -1,0 +1,35 @@
+.header{
+    background-color: #e61518 ;
+    /* background: url(./top_bg.jpg) center 0; */
+}
+.showAll::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #e61518
+}
+.login-wrap{
+    background: #b13333;
+}
+.plugins-tips{
+    background: #f2f2f2;
+}
+.plugins-tips a{
+    color: #d60404;
+}
+.el-upload--text em {
+    color: #d60404;
+}
+.pure-button{
+    background: #d60404;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    background-color: #d60404 !important;
+    border-color: #d60404 !important;
+}
+.tags-li.active {
+    border: 1px solid #d60404;
+    background-color: #d60404;
+}
+.collapse-btn:hover{
+    background: #d60404;
+}
